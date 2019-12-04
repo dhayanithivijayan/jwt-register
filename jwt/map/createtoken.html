@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accounts</title>
+    <link rel="stylesheet" href="./css/createtoken.css">
+    
+
+</head>
+
+<body>
+    <div class="topline">
+        <div class="container">
+            <p>
+                We rolled out new pricing so your invoice may look a little different. Read more about the changes
+            </p>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="left_menu">
+                <img src="img/logo.png" alt="" class="brand">
+                <a href="">Virtual Maze</a>
+                <a href="" class="oddmenu">Account</a>
+            </div>
+
+            <nav>
+                <a href="">Dashboard</a>
+                <a href="">Tokens</a>
+                <a href="">Statistics</a>
+                <a href="">Invoices</a>
+                <a href="">Settings</a>
+                <div class="dropmenu">
+                    <img src="./img/account.png" alt="accountimg" id="accounticon">
+                    <div class="dropdown">
+                        <a href="">Account</a>
+                        <a href="">Log Out</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="main_container">
+            <form action="" id="token_form">
+
+                <div class="backlink">
+                    <a href=""> Back to all access tokens</a>
+                </div>
+                <div class="main_title">
+                    <h1>Create an access Token</h1>
+                </div>
+                <div class="token_name">
+                    <h3>Token Name</h3>
+                    <p>Choose a name for the token</p>
+                    <div class="token_name_input">
+                        <label for="name">Name:</label>
+                        <input type="text" id="tokenname" name="tokenname" required='true'>
+                    </div>
+                </div>
+                <div class="token_scope">
+                    <h4>Token Scopes</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia eum doloribus impedit,
+                        deserunt dolorum, perspiciatis. Nihil molestiae nobis eius excepturi.
+                    </p>
+                    <div class="public_scope">
+                        <h4>Public scopes</h4>
+                        <div class="checkboxes">
+                            <div>
+                                <input type="checkbox" checked>
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" checked>
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" checked>
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" checked>
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" checked>
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" checked>
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" checked>
+                                <span>Style Tiles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="secret_scope">
+                        <h4>Secret Scopes</h4>
+                        <div class="checkboxes">
+                            <div>
+                                <input type="checkbox">
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <span>Style Tiles</span>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <span>Style Tiles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="token_restrictions">
+                        <h4>Token Restrictions</h4>
+                        <p>
+                            Make your access tokens more secure by adding URL restrictions. When you add a URL
+                            restriction to a token, that token will only work for requests that originate from the URLs
+                            you specify. Tokens without restrictions will work for requests originating from any URL.
+                        </p>
+                    </div>
+                    <div class="token_url">
+                        <h4>Urls</h4>
+                        <p>
+                            Restrict this token to specific URLs. You can add URLs one at a time or as a comma-separated
+                            list. Your URL's format is important. Learn more about how to format your URL on our access
+                            token documentation page. This feature is compatible with many Mapbox tools with some
+                            limitations. For web applications using Mapbox GL JS, it requires version 0.53.1 and higher.
+                            It is not currently compatible with Mapbox native SDKs.
+                        </p>
+                        <div class="url">
+                            <h5>URL</h5>
+                            <div class="add_url_input">
+                                <input type="text" id="urlinput" placeholder="eg:https://example.com">
+                                <button id="addurlbtn" disabled='true' type="button">Add Url</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="addurls">
+                        <div class="urlcounter">
+                            <span id="urlcountvalue"></span>
+                            <span>Url</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>This token will work for requests originating from any requests</p>
+                    </div>
+                    <div class="tokenbutton">
+                        <button id="canceltokenbutton">cancel</button>
+                        <button id="createtokenbutton">Create</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+    <div class="confirm_password" id="confirmpswdpopup" style="display: none;">
+        <div class="container">
+            <div class="content">
+                <h1>Confirm Your Password to continue</h1>
+                <div>
+                    <form action="" id="confirmpasswod_form">
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" name="confirmedpassword">
+                        </div>
+                        <button type="submit" id="confirmpasswordbtn">Confirm</button>
+                        <button type="button" id="forgotbtn">Forgot Password</button>
+                    </form>
+                </div>
+                <img src="./img/close.svg" id="popupcancelbtn" style="position: absolute;top: 10px;right: 10px;">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="showtoken" style="display: none;">
+        <div class="showtoken_content">
+            <h1>Token Generated Successfull</h1>
+            <p>Save this token for future use</p>
+            <div id="tokendata"></div>
+            <button id="tokenpopupclosebtn">Close</button>
+        </div>
+    </div>
+    <script src="./js/account.js"></script>
+    <script src="./js/addtoken.js"></script>
+</body>
+
+</html>

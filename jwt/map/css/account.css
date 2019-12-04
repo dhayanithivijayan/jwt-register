@@ -1,0 +1,305 @@
+/*global*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    background: #f2f2f2;
+}
+p,h1,h2,h3{
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+/*topline*/
+
+.topline{
+    background: #1a73e8;
+    color: white;
+    padding:15px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*header*/
+header{
+    padding-top: 20px;
+}
+header .container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+header nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+header nav a{
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+header .left_menu{
+    display: flex;
+    align-items: flex-end;
+    font-size: 21px;
+    font-weight: bold  
+}
+.left_menu a{
+    text-decoration: none
+}
+header .left_menu a{
+   color: black;
+}
+header .left_menu .oddmenu{
+    padding-left: 20px;
+    margin-left: 10px;
+    border-left: 1px solid blue;
+}
+header nav div{
+    padding-left:20px
+}
+.brand{
+    width: 40px;
+    padding-right: 10px;
+}
+#accounticon{
+    width: 30px;
+}
+.dropmenu{
+    position: relative;
+}
+.dropdown{
+    position: absolute;
+    top: 35px;
+    left: -30px;
+    background: white;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: none;
+}
+.dropdown a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 10px;
+    
+}
+/*welcome*/
+
+.welcome{
+    padding-top: 50px;
+}
+
+/*main*/
+main{
+    margin-top: 20px;
+}
+
+main .container{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-gap: 30px;
+}
+main .top{
+ display: grid;
+ grid-template-columns: 70% 30%; 
+}
+
+.show{
+    background: url(../img/map.jpg) ,rgba(0,0,0,0.3);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    min-height: 350px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    padding-top: 40px;
+    padding-left: 30px;
+   
+}
+.show a{
+    color: white;
+    text-decoration: none;
+}
+.show_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    padding-left: 30px;
+    font-size: 20px;
+}
+.show_right .options{
+    
+    display: flex;
+    flex-direction: column;
+}
+.show_right .options{
+    font-size: 16px;
+    padding-top: 20px;
+}
+.options a{
+   text-decoration: none;
+    color: cornflowerblue;
+    padding-left: 10px;
+}
+.options div{
+    display: flex;
+    margin-top: 10px;
+}
+.options div >img{
+    width: 20px;
+}
+/*token class*/
+.tokenclass{
+    margin-top:30px;
+    background: white;
+    padding: 60px 40px;
+}
+
+.token_head_title{
+    display: flex;
+    justify-content: space-between;
+}
+.token_head_title button{
+    background:#1a73e8;
+    color: white;
+    border:none;
+    border-radius: 20px;
+    font-weight: bold;
+    padding:10px 20px
+}
+.token_lead{
+    margin-top: 20px;
+}
+.tokens{
+    margin-top: 22px;;
+}
+.token{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    border-bottom:1px solid grey;
+    margin:10px 0;
+}
+
+.token_name{
+    font-weight: bold;
+    padding-bottom: 10px;;
+}
+.token_value{
+    display: flex;
+    background: #f2f2f2;
+    padding: 20px;
+    color: rgba(0,0,0,0.6)
+}
+
+.token_details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+.token_details img{
+    height: 30px; 
+}
+.other_token_details{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.other_token_details span{
+    font-weight: bold;
+}
+.other_token_details span span{
+    font-weight: normal;
+}
+
+/*main right*/
+.right{
+    display: flex;
+    flex-direction: column
+}
+.right .billing{
+    display: flex;
+    justify-content: space-between;
+}
+.billing button{
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+.right > h3{
+    padding-top: 15px;
+    color: rgba(0,0,0,0.5)
+}
+.right > h2{
+    padding-top: 20px;
+    color: rgba(0,0,0,0.7)
+}
+.billing_usage h4{
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.billing_usage p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: rgba(0,0,0,0.7)
+}
+#getstartedlink{
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+/*Tools*/
+
+.tools{
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+}
+.tools a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.7)
+}
+.tool{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.tool h3{
+    padding-left: 10px;
+    font-weight: lighter
+}
+.tool img{
+    width: 30px;
+}
+
+.spinner{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+}
+.spinner img{
+    width: 80px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lOGIN</title>
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="img/logo.png" alt="VirtualMaze" class="brand">
+                <span>Virtual Maze</span>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <form action="" id="signup_form"
+                    <h1>Sign up</h1>
+
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="uname" required='true' minlength="4"> 
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required='true'>
+                    </div>
+                    <div>
+                        <label for="">Create Password</label>
+                        <input type="text" name="password" id="password" required='true' pattern='^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$'
+                        title="Password must contain atleast 1 number 1 uppercase 1 lowercase and minimun 8 characters">
+                    </div>
+                    <div>
+                      <label for="first name">First Name</label>
+                      <input type="text" name="firstname" id="fname" required='true' minlength="2">
+                    </div>
+                     <div>
+                      <label for="last_name">Last Name</label>
+                      <input type="text" name="lastname" id="lname">
+                    </div> 
+                    <div>
+                      <label for='company'>Company</label>
+                      <input type="text" name="company" id="company" required='true'>
+                    </div>
+                    <div class="row_flex">
+                        <input type="checkbox" name="ischecked" required='true'>
+                        <span>I agree with the terms and condition</span>
+                    </div>
+
+                    <button type="submit">Sign up</button>
+                    
+            </form>
+            <div class="form_right">
+                <p>You're one step away from world-class design and development tools for apps, navigation, AR, & data visualization.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/signup.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+/*global*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin:0;
+    padding: 0;
+}
+p,h1,h2,h3{
+    margin:0;
+    padding: 0;
+}
+p{
+    line-height: 1.6
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+/*topline*/
+
+.topline{
+    background: #1a73e8;
+    color: white;
+    padding:15px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*header*/
+header{
+    padding-top: 20px;
+}
+header .container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+header nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+header nav a{
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+header .left_menu{
+    display: flex;
+    align-items: flex-end;
+    font-size: 21px;
+    font-weight: bold  
+}
+.left_menu a{
+    text-decoration: none
+}
+header .left_menu a{
+   color: black;
+}
+header .left_menu .oddmenu{
+    padding-left: 20px;
+    margin-left: 10px;
+    border-left: 1px solid blue;
+}
+header nav div{
+    padding-left:20px
+}
+.brand{
+    width: 40px;
+    padding-right: 10px;
+}
+#accounticon{
+    width: 30px;
+}
+.dropmenu{
+    position: relative;
+}
+.dropdown{
+    position: absolute;
+    top: 35px;
+    left: -30px;
+    background: white;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: none;
+}
+.dropdown a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 10px;
+    
+}
+
+/*main*/
+main{
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+.main_container{
+    width: 60%;
+    margin: auto
+}
+.backlink a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+.backlink{
+    margin-bottom: 30px;
+}
+.main_title{
+    margin-bottom: 30px;
+}
+.token_name > h3 {
+    padding-bottom: 20px;
+}
+.token_name p{
+    padding-bottom: 10px;
+    color: rgba(0,0,0,0.6)
+}
+.token_name_input label{
+    padding-bottom: 5px;
+}
+.token_name_input input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.token_scope p{
+    color: rgba(0,0,0,0.7)
+}
+
+.checkboxes div{
+    width: 25%;
+    margin-bottom: 20px;
+}
+.checkboxes{
+    display: flex;
+    flex-wrap: wrap
+}
+.add_url_input input{
+    width: 80%;
+}
+.add_url_input{
+    display: flex;
+}
+.add_url_input button{
+    border: none;
+    border-radius: 20px;
+    background: cornflowerblue;
+    color: white;
+    padding: 5px 20px;
+    color: white;
+    margin-left: 30px;
+}
+.tokenbutton{
+    margin-top: 30px;
+}
+.tokenbutton button:nth-child(1){
+    background: white;
+    border:1px solid #1a73e8;
+    color: #1a73e8;
+    margin: 0;
+}
+.tokenbutton button{
+    background: #1a73e8;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+.addurls{
+    margin-top: 40px;
+}
+.newurl{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.newurl button{
+    border: none;
+    background: tomato;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.confirm_password{
+    min-height: 100vh;
+    width: 100%;
+    background: white;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,0.3);
+}
+.confirm_password .content{
+    width: 500px;
+    margin: auto;
+    background: linear-gradient(to right,#136a8a,#267871);
+    padding: 50px 30px;
+    color: white;
+    border-radius: 10px;
+}
+.confirm_password form div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.confirm_password h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.confirm_password .content{
+    position: relative;
+}
+.confirm_password form input{
+    margin:10px 0;
+    padding: 8px 0 5px 0;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+}
+.confirm_password form button{
+    background: cornflowerblue;
+    color: white;
+    font-size: 18px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+#forgotbtn{
+    background: tomato;
+    margin-top: 10px;
+}
+.showtoken{
+    height: 100vh;
+    width: 100%;
+    align-items:center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    text-align:center;
+    background: rgba(0,0,0,0.3);
+   
+}
+#popupcancelbtn{
+    fill: tomato;
+}
+
+.showtoken_content{
+    background: #f2f2f2;
+    padding:100px 0;
+    margin: auto;
+    border-radius: 20px;
+    width: 50%;
+}
+
+#tokendata{
+    text-align: center;
+    padding: 50px;
+    word-wrap: break-word;
+}
+
+#tokenpopupclosebtn{
+    border:none;
+    border-radius: 20px;
+    background: tomato;
+    color: white;
+  
+}

@@ -1,0 +1,118 @@
+/*global*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    background:linear-gradient(45deg,#9c13a1,#6d0c94)
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+/*header*/
+
+header{
+    padding-top: 20px;
+    color: white;
+}
+.brand{
+    height: 60px;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*login*/
+
+main{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main .container{
+    width: 80%;
+}
+main form{
+    background: white;
+    padding: 10px 0px 30px 0;
+    border-radius: 20px;
+    width: 30%
+}
+main form .form_field{
+    display: flex;
+    flex-direction: column;
+}
+main form input{
+    margin:10px 0;
+    border:none;
+    border-bottom:1px solid grey;
+    height: 40px;
+}
+main form label{
+    
+    color: rgba(0,0,0,0.6)
+}
+main form h1{
+    color: rgba(0,0,0,0.9)
+}
+main form button{
+    border: none;
+    background: #1a73e8;
+    padding: 10px 40px;
+    width: 100%;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/*media*/
+
+@media screen and (max-width:1150px){
+    .container{
+        width: 80%;
+    }
+    main form{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    main form{
+        width: 45%;
+    }
+}
+@media screen and (max-width:800px){
+    main form{
+        width: 55%;
+    }
+}
+@media screen and (max-width:640px){
+    .container{
+        width: 90%
+    }
+    main form{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .container{
+        width: 97%
+    }
+    main form{
+        width: 97%;
+        border-radius: 10px;
+    }
+}
